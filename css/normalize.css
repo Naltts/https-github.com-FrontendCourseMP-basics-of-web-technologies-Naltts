@@ -192,11 +192,11 @@ select { /* 1 */
  */
 
 кнопка,
-[type="button"],
+/* [type="button"],
 [type="reset"],
 [type="submit"] {
  -webkit-appearance: button;
-}
+} */
 
 /**
  * Убираем внутреннюю рамку и отступы в Firefox.
@@ -236,14 +236,7 @@ fieldset {
  * элементы `fieldset` во всех браузерах.
  */
 
-легенда {
- box-sizing: border-box; /* 1 */
- цвет: inherit; /* 2 */
- отображение: таблица; /* 1 */
- максимальная ширина: 100%; /* 1 */
- отступы: 0; /* 3 */
- белое пространство: нормальное; /* 1 */
-}
+
 
 /**
  * Добавьте правильное вертикальное выравнивание в Chrome, Firefox и Opera.
@@ -286,10 +279,10 @@ textarea {
  * 2. Исправляет стиль контура в Safari.
  */
 
-[type="search"] {
- -webkit-appearance: textfield; /* 1 */
- outline-offset: -2px; /* 2 */
-}
+/* [type="search"] {
+ -webkit-appearance: textfield; 
+ outline-offset: -2px; 
+} */
 
 /**
  * Устраняет внутренние отступы в Chrome и Safari на macOS.
