@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AQUARIM - Рыбный ресторан</title>
+    <!-- Подключение CSS файлов -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#menu">Меню</a></li>
-                <li><a href="#delivery">Доставка</a></li>
-                <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#promotions">Акции</a></li>
-                <li><a href="#reservation">Бронирование</a></li>
-                <li><a href="#about">О нас</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <section class="hero">
             <h1>AQUARIM</h1>
             <p>РЫБНЫЙ РЕСТОРАН</p>
-            <p><img src="images/вилка + креветка.png" width="70" height="190" alt="креветка"></p>
+            <p><img src="images/вилка + креветка.png" width="70" height="190" alt="вилка"></p>
             <p>Откройте для себя мир изысканных вкусов с нашими рыбными деликатесами, приготовленными специально для вас.</p>
         </section>
 
@@ -47,7 +37,6 @@
             <h2>ОТВЕТСТВЕННОСТЬ</h2>
             <p>ИСТОРИЯ РЫБНОГО ИСКУШЕНИЯ</p>
             <p><img src="images/шеф-повар.png" width="290" height="190" alt="повар"></p>
-
             <article class="history">
                 <p>Наша история началась с мечты о создании места, где каждый может насладиться непревзойденным вкусом свежей рыбы прямо у себя дома. Мы поставили перед собой задачу предложить нечто большее, чем просто блюдо из рыбы – мы хотели подарить вам настоящее морское путешествие.</p>
                 
@@ -112,7 +101,7 @@
             <h2>АКЦИИ</h2>
             <p class="promotions-subtitle">ОАЗИС ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</p>
             <p><img src="images/2-е блюдо.png" width="250" height="250" alt="блюдо"></p>
-            
+
             <article class="promotion-card">
                 <h3>СКИДКА 15% НА ПЕРВЫЙ ЗАКАЗ</h3>
                 <p>Воспользуйтесь этой прекрасной возможностью и откройте для себя мир изысканных морских деликатесов, которыми славятся наш ресторан</p>
@@ -126,35 +115,38 @@
 
             <form class="reservation-form">
                 <div class="form-group">
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name" required>
+                    <p><label for="name">Имя:</label>
+                    <br><input type="text" id="name" name="name" required></p>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="date">Дата:</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="time">Время:</label>
-                        <input type="time" id="time" name="time" required>
-                    </div>
+                    <p><label for="phone">Телефон:</label>
+                    <br><input type="tel" id="phone" name="phone" required></p>
                 </div>
                 
                 <div class="form-group">
-                    <label for="guests">Кол-во гостей:</label>
-                    <input type="number" id="guests" name="guests" min="1" max="20" required>
+                    <table>
+                        <tr>
+                            <td><label for="date">Дата:</label></td>
+                            <td><label for="time">Время:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date" name="date" required>
+                </td>
+                            <td><input type="time" id="time" name="time" required>
+                </td>
+                        </tr>
+                    </table>
                 </div>
                 
                 <div class="form-group">
-                    <label for="wishes">Ваши пожелания:</label>
-                    <textarea id="wishes" name="wishes" rows="4"></textarea>
+                    <p><label for="guests">Кол-во гостей:</label>
+                    <br><input type="number" id="guests" name="guests" min="1" max="20" required></p>
+                </div>
+                
+                <div class="form-group">
+                    <p><label for="wishes">Ваши пожелания:</label>
+                    <br><textarea id="wishes" name="wishes" rows="4"></textarea></p>
                 </div>
                 
                 <button type="submit">Забронировать</button>
@@ -170,9 +162,10 @@
                 <h3>ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ</h3>
                 <p>Телефон: <a href="tel:+79654788976">+7 (965) 478-89-76</a></p>
                 <p>Email: <a href="mailto:aquarim@gmail.com">aquarim@gmail.com</a></p>
-                <p>Адрес: г. Москва, ул. Тверская, д.8</p>
+                <h3>Адрес:</h3> 
+                <p>г. Москва, ул. Тверская, д.8</p>
                 <div class="social-links">
-                    <span>МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</span>
+                <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</h3>
                 </div>
             </div>
 
@@ -199,7 +192,7 @@
             <div class="footer-section">
                 <h2>AQUARIM</h2>
                 <p><a href="#">Политика обработки персональных данных</a></p>
-                <p>Desing by @sinkitse</p>
+                <p>Desing by @sshultse</p>
             </div>
         </div>
         

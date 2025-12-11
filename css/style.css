@@ -1,0 +1,74 @@
+
+@font-face{
+    font-family:'TRIAL_Oceanic_Medium';
+    src: url('fonts/oceanic-font-family/TRIAL_Oceanic-Medium-BF6487cfe5e2078.otf') format(truetype);
+    font-weight: 700
+}
+@font-face{
+    font-family:'TRIAL_Oceanic_Regular';
+    src: url('fonts/oceanic-font-family/TRIAL_Oceanic-Regular-BF6487cfe600a81.otf') format(truetype);
+    font-weight: 400
+}
+
+@font-face{
+    font-family:'Gilroy-Light(Reguler)';
+    src: url('fonts/Gilroy-2/Gilroy-Light.otf') format(truetype);
+    font-weight: 100
+}
+
+@font-face{
+    font-family:'Gilroy-Extrabold(Semi)';
+    src: url('fonts/Gilroy-2/Gilroy-ExtraBold.otf') format(truetype);
+    font-weight: 900
+}
+
+@font-face{
+    font-family:'Gilroy-Medium(Reguler)';
+    src: url('fonts/Gilroy-2/Gilroy-Light.otf') format(truetype);
+    font-weight: 400
+}
+
+
+:root{
+    font-size: 62.5%;
+    /*dark blue*/
+    --color-dark-blue: rgba(1, 24, 69, 1);
+
+    /*blue*/
+    --color-blue: rgba(65, 100, 171, 1);
+
+    /*light blue*/
+    --color-light-blue:rgba(73, 97, 146, 1);
+
+    /*text*/
+    --color-text: rgba(232, 237, 255, 1);
+
+    /*акцент*/
+    --color-akcent: rgba(254, 106, 60, 1);
+
+    /*white 50%*/
+    --color-white-50:rgba(232, 237, 255, 0.50);
+
+    /*black*/
+    --color-black: rgba(0, 0, 0, 1);
+    
+    /*red*/
+    --color-red: rgba(216, 19, 19, 1);
+}
+main{
+    overflow: hidden;
+    box-sizing: content-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 85vh;
+    background-color:var(--color-dark-blue);
+    color: var(--color-text);
+    min-width: 320px;
+    margin: 0 auto;
+} 
+
